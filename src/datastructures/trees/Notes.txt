@@ -1,0 +1,26 @@
+https://www.youtube.com/watch?v=BHB0B1jFKQc
+
+Full Binary Tree
+	- Each node should have either 0 or 2 nodes
+	
+Complete Binary Tree
+	- Each node should complete the level before moving to next level of the tree
+	- Node gets added from left to right
+	
+Perfect Binary Tree
+	- Complete + Full binary tree
+	- All the levels should be filled with nodes
+	- All the leaves are on the same level
+	
+Binary Search Tree
+	- Left side of the root node should have less value than root
+	- Right side of the root node should have greater value than root
+
+Traversing a tree, there are two commonly used technique
+	- Breadth First Search or Level Order Traversal
+		~ It is a Vertex based algorithm
+	- Depth First Search	
+		~ It is a edge based algorithm
+		* PreOrder Traversal  - NLR
+		* InOrder Traversal   - LNR
+		* PostOrder Traversal - LRN

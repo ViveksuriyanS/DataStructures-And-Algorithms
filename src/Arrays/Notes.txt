@@ -1,0 +1,13 @@
+Array size can be calculated as
+	- Array.length
+	
+How to sort an array?
+	- Arrays.sort(array);
+
+Print the maximum element in the array - Java8
+	- Arrays.stream(inputArray).max().getAsInt();
+
+Rotate Array left 'N' times
+	- int len = arr.length;
+	- for(int i=0;i<len;i++) 
+		sysout(arr[(i+N)%len])
