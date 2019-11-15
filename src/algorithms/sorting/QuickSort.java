@@ -10,21 +10,27 @@ public class QuickSort {
 	}
 
 	private static void quicksort(int[] vals, int low, int high) {
+		// Pivot index can be taken as any value
 		int pivotIndex;
 		if (low < high) {
 			pivotIndex = partition(vals, low, high);
+			System.out.println("Pivot Index :" + pivotIndex);
 			quicksort(vals, low, pivotIndex - 1);
 			quicksort(vals, pivotIndex, high);
 		}
 
 	}
 
+	// Partition is done
 	private static int partition(int[] vals, int startIndex, int endIndex) {
+		// Pivot Value can be any value, here we are taking the last index value
 		int pivotVal = vals[endIndex];
 		int pivotInd = startIndex;
 		System.out.println("Pivot Value: " + pivotVal);
 		System.out.println(Arrays.toString(vals));
 		int i = startIndex;
+		// Sort the values that are lower that pivot value to the left side
+		// And the value higher than pivot value to the right side
 		for (; i < endIndex; i++) {
 			if (vals[i] < pivotVal) {
 				int temp = vals[i];
@@ -32,6 +38,7 @@ public class QuickSort {
 				vals[pivotInd] = temp;
 				pivotInd++;
 			}
+			System.out.println(Arrays.toString(vals));
 		}
 		int temp1 = vals[i];
 		vals[i] = vals[pivotInd];

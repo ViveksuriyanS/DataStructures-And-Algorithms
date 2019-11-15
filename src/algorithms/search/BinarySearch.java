@@ -3,6 +3,10 @@ package algorithms.search;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// Divide and Conquer approach
+// First will check the middle value, if matches returns
+// Else a. Check in left half / b. Check in right half
+// Recurse the same till it is found
 public class BinarySearch {
 
 	public static void main(String[] args) {
