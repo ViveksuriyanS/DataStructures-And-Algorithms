@@ -14,7 +14,7 @@ public class QuickSort {
 		int pivotIndex;
 		if (low < high) {
 			pivotIndex = partition(vals, low, high);
-			System.out.println("Pivot Index :" + pivotIndex);
+			
 			quicksort(vals, low, pivotIndex - 1);
 			quicksort(vals, pivotIndex, high);
 		}
@@ -45,6 +45,7 @@ public class QuickSort {
 		vals[pivotInd] = temp1;
 
 		System.out.println(Arrays.toString(vals));
+		System.out.println("Pivot Index :" + pivotInd);
 		System.out.println("__________________");
 		return pivotInd;
 

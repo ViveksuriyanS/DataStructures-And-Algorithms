@@ -39,6 +39,7 @@ public class SimpleSinglyLinkedList {
 		headNode = null;
 	}
 
+	// Traversing the list
 	public static void findElement(int element) {
 		boolean found = false;
 		int count = 1;
