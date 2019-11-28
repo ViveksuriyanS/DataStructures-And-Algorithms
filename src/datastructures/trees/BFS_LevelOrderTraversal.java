@@ -78,3 +78,5 @@ class Node {
 		this.rightNode = null;
 	}
 }
+
+// Also known as Breadth First Search

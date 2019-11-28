@@ -19,6 +19,7 @@ public class BinarySearchTrees {
 
 }
 
+// Binary Search Tree Node 
 class BSTNode {
 	int data;
 	BSTNode leftNode;
@@ -48,6 +49,7 @@ class BSTNode {
 		this.rightNode = rightNode;
 	}
 
+	// Adding a node to the BST
 	public BSTNode addNode(BSTNode node, int value) {
 		if (node == null) {
 			return createNode(value);
@@ -62,20 +64,24 @@ class BSTNode {
 		return node;
 	}
 
+	// Finding the minNode
 	public BSTNode minNode(BSTNode node) {
 		BSTNode tmp = node;
 
 		while (tmp != null) {
+			// Left most node will contain the minimum value in a Tree
 			tmp = node.getLeftNode();
 		}
 
 		return tmp != null ? tmp : null;
 	}
 
+	// Finding the maxNode
 	public BSTNode maxNode(BSTNode node) {
 		BSTNode tmp = node;
 
 		while (tmp != null) {
+			// Right most node will contain the maximum value in a tree
 			tmp = tmp.getRightNode();
 		}
 
@@ -118,10 +124,10 @@ class BSTNode {
 			} else if (val > node.getData()) {
 				node = node.getRightNode();
 			} else {
-				if(node.getRightNode() != null) {
+				if (node.getRightNode() != null) {
 					inorderSuccessor = getSuccessor(node);
 				}
-				break;	
+				break;
 			}
 		}
 
@@ -129,28 +135,31 @@ class BSTNode {
 	}
 
 	public BSTNode getSuccessor(BSTNode node) {
-		if(node == null) {
+		if (node == null) {
 			return null;
 		}
 		// the bigger value of node will stay in right side of the node A
-		// If the node A has any left side values then the left most value is the successor 
+		// If the node A has any left side values then the left most value is the
+		// successor
 		BSTNode temp = node.getRightNode();
-		
-		while(temp.getLeftNode() != null) {
+
+		while (temp.getLeftNode() != null) {
 			temp = node.getLeftNode();
 		}
-		
+
 		return temp;
 	}
-	
+
 	public int getOddEventLevelDifference(BSTNode node) {
 		if (node == null) {
 			return 0;
-		} 
-		
-		return node.getData() - getOddEventLevelDifference(node.getLeftNode()) - getOddEventLevelDifference(node.getRightNode());
+		}
+
+		return node.getData() - getOddEventLevelDifference(node.getLeftNode())
+				- getOddEventLevelDifference(node.getRightNode());
 	}
-	
+
+	// Get the Nodes of same order
 	public BSTNode getSibling(BSTNode node, int val) {
 		if (node == null) {
 			return null;
@@ -182,6 +191,7 @@ class BSTNode {
 		return node != null ? siblingNode : null;
 	}
 
+	// Get the parent node of a node
 	public BSTNode getParent(BSTNode node, int val) {
 		if (node == null) {
 			return null;
@@ -204,6 +214,7 @@ class BSTNode {
 		return node != null ? parentNode : null;
 	}
 
+	// Delete the node
 	public BSTNode deleteNode(BSTNode node, int val) {
 		if (node == null) {
 			return null;
@@ -255,6 +266,7 @@ class BSTNode {
 		return tmp;
 	}
 
+	// Adding node to the tree
 	public BSTNode createNode(int value) {
 		BSTNode newNode = new BSTNode();
 		newNode.setData(value);

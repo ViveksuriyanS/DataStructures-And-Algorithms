@@ -9,36 +9,80 @@ public class BinaryTreeTraversals {
 	static treeNodeX rootNode;
 
 	public static void main(String[] args) {
+		addNode(1);
+		addNode(2);
+		addNode(3);
+		addNode(4);
 		addNode(5);
 		addNode(6);
 		addNode(7);
-		addNode(8);
-		addNode(9);
+
+		System.out.println("_____Level Order Traversal______");
 		topBottomLevelTranversal();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Pre Order Traversal______");
 		preOrderTraversal();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Inorder Traversal______");
 		inOrderTraversal();
-		
-		System.out.println("___________");
+
+		System.out.println("______Postorder Traversal_____");
 		postOrderTraversal();
-		
-		System.out.println("___________");
+
+		System.out.println("______ZigZag Traversal_____");
+		zigZagTraversal();
+
+		System.out.println("_____Reverse Level Order Traversal______");
 		reverseLevelOrderTraversal();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Top Bottom Level Traversal______");
 		topBottomLevelTranversal();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Leaf Nodes count_____");
 		countLeafNodes();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Half Nodes count______");
 		countHalfNodes();
-		
-		System.out.println("___________");
+
+		System.out.println("_____Full Nodes count______");
 		countFullNodes();
+	}
+
+	public static void zigZagTraversal() {
+		treeNodeX tempX = rootNode;
+		Stack<treeNodeX> currentLevel = new Stack<treeNodeX>();
+		Stack<treeNodeX> nextLevel = new Stack<treeNodeX>();
+		currentLevel.push(tempX);
+		boolean leftToRight = true;
+		while (!currentLevel.isEmpty()) {
+			treeNodeX popNode = currentLevel.pop();
+			System.out.println(popNode.data);
+			// In Stack First left will be added then Right
+			if (leftToRight) {
+				// Push left then right
+				// While pop Right will be popped and then Left
+				if (popNode.left != null) {
+					nextLevel.add(popNode.left);
+				}
+				if (popNode.right != null) {
+					nextLevel.add(popNode.right);
+				}
+			} else {
+				if (popNode.right != null) {
+					nextLevel.add(popNode.right);
+				}
+				if (popNode.left != null) {
+					nextLevel.add(popNode.left);
+				}
+			}
+			if (currentLevel.isEmpty()) {
+				Stack<treeNodeX> exchange = nextLevel;
+				nextLevel = currentLevel;
+				currentLevel = exchange;
+				leftToRight = !leftToRight;
+			}
+
+		}
 	}
 
 	// Insert left first then right, uses Stack
@@ -72,7 +116,7 @@ public class BinaryTreeTraversals {
 	// Insert right first then left, uses stack
 	public static void preOrderTraversal() {
 		if (rootNode == null)
-			return ;
+			return;
 		Stack<treeNodeX> nodes = new Stack<treeNodeX>();
 		nodes.push(rootNode);
 		while (!nodes.isEmpty()) {
@@ -116,7 +160,6 @@ public class BinaryTreeTraversals {
 		}
 
 	}
-
 
 	// Insert right then left and uses Queue and Stack
 	public static void reverseLevelOrderTraversal() {
@@ -170,7 +213,7 @@ public class BinaryTreeTraversals {
 		if (rootNode == null) {
 			rootNode = tempNode;
 		} else {
-			// Adding the root node to the 
+			// Adding the root node to the
 			Queue<treeNodeX> treeNodeXs = new LinkedList<>();
 			treeNodeXs.add(rootNode);
 			// Checking additional
@@ -217,7 +260,7 @@ public class BinaryTreeTraversals {
 		}
 		System.out.println("There are " + count + " half nodes present in the tree.");
 	}
-	
+
 	// Count number of floating nodes.
 	public static void countLeafNodes() {
 		if (rootNode == null)
@@ -227,7 +270,7 @@ public class BinaryTreeTraversals {
 		nodes.add(rootNode);
 		while (!nodes.isEmpty()) {
 			treeNodeX tmpNode = nodes.remove();
-			
+
 			if (tmpNode.getLeft() != null) {
 				nodes.add(tmpNode.getLeft());
 			}
@@ -241,7 +284,7 @@ public class BinaryTreeTraversals {
 		}
 		System.out.println("There are " + count + " leaf nodes present in the tree.");
 	}
-	
+
 	// Check if a root or sub-root node has both left and right nodes.
 	public static void countFullNodes() {
 		if (rootNode == null)
@@ -251,7 +294,7 @@ public class BinaryTreeTraversals {
 		nodes.add(rootNode);
 		while (!nodes.isEmpty()) {
 			treeNodeX tmpNode = nodes.remove();
-			
+
 			if (tmpNode.getLeft() != null) {
 				nodes.add(tmpNode.getLeft());
 			}

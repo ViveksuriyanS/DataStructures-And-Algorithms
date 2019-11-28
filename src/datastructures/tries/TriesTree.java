@@ -24,6 +24,7 @@ public class TriesTree {
 		TrieNode currentNode = root;
 		for (int i = 0; i < input.length(); i++) {
 			char c = input.charAt(i);
+			// Check the first node
 			TrieNode node = currentNode.children.get(c);
 			if (node == null) {
 				node = new TrieNode();
@@ -50,7 +51,7 @@ public class TriesTree {
 			node.children.put(ch, node);
 		}
 
-		recursiveInsert(node, index + 1, input);
+		recursiveInsert(node, index + 1, input); // We pass newly created node as current node
 	}
 
 	public boolean search(String input) {
@@ -85,7 +86,7 @@ public class TriesTree {
 		return recursiveSearch(currentNode, index + 1, input);
 	}
 
-	public boolean recursiveDelete (String input) {
+	public boolean recursiveDelete(String input) {
 		return recursiveDelete(root, 0, input);
 	}
 

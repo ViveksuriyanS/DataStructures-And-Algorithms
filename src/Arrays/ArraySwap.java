@@ -22,3 +22,7 @@ public class ArraySwap {
 	}
 
 }
+
+// 1  <-->  7
+// 2  <-->  6
+// 3  <-->  5 

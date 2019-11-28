@@ -1,6 +1,5 @@
 package Collections;
 
-import java.awt.List;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -16,7 +15,7 @@ public class LinkList {
 		list.add(7);
 		list.add(2);
 		printElements(list);
-		System.out.println();
+		System.out.println(list);
 	}
 	
 	public static void printElements(LinkedList<Integer> l){
@@ -27,3 +26,6 @@ public class LinkList {
 	}
 
 }
+
+// List can be printed in simple sysout
+// No need of iteration

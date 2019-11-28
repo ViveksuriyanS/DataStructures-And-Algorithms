@@ -40,8 +40,8 @@ public class HashMapp {
 		NewObject n2 = new NewObject(2, "Suriya");
 		objMap.put(1, n1);
 		objMap.put(2, n2);
-		System.out.println(objMap.containsValue(n1));
-		System.out.println(objMap.containsValue(n2));
+		System.out.println(objMap.containsValue(n1)); // Returns true
+		System.out.println(objMap.containsValue(new NewObject(3,"Vishnu"))); // returns false
 	}
 
 }

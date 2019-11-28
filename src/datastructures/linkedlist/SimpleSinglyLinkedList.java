@@ -73,17 +73,17 @@ public class SimpleSinglyLinkedList {
 	}
 
 	public static Node1 returnTailBeforeNode() {
-		Node1 tailNode = null;
+		Node1 tailBeforeNode = null;
 
 		if (!checkEmpty()) {
 			Node1 tempNode = headNode;
 			while (tempNode.nextNode.nextNode != null) {
 				tempNode = tempNode.nextNode;
 			}
-			tailNode = tempNode;
+			tailBeforeNode = tempNode;
 		}
 
-		return tailNode;
+		return tailBeforeNode;
 	}
 
 	public static Node1 createNode(int element) {

@@ -8,6 +8,11 @@ public class AbstractListEg {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		AbstractList<Integer> list = new LinkedList<Integer>(){
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			{
 				add(6);
 				add(16);
@@ -20,3 +25,7 @@ public class AbstractListEg {
 	}
 
 }
+
+// Implements Collection Interface and AbstractCollection Class
+// Used to implement unmodifiable list
+// Abstract Class is a kind of singleton class

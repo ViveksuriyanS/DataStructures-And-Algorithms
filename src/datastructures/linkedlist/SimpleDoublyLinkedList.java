@@ -18,7 +18,7 @@ public class SimpleDoublyLinkedList {
 		SimpleDoublyLinkedList.insertAtHead(7);
 		// SimpleDoublyLinkedList.printList();
 		SimpleDoublyLinkedList.insertAtTail(17);
-		SimpleDoublyLinkedList.printList();
+		SimpleDoublyLinkedList.printList()	;
 		System.out.println();
 
 		// Inserting element after the tail

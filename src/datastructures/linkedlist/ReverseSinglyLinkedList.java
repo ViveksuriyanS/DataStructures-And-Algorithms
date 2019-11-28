@@ -28,6 +28,7 @@ public class ReverseSinglyLinkedList {
 			tmpHead.node = nodeStack.pop();
 			tmpHead = tmpHead.node;
 		}
+		// Making the end
 		tmpHead.node = null;
 
 		return head;
