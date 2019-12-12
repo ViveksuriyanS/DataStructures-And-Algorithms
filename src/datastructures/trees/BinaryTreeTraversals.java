@@ -16,9 +16,20 @@ public class BinaryTreeTraversals {
 		addNode(5);
 		addNode(6);
 		addNode(7);
+		addNode(8);
+		addNode(9);
+		addNode(10);
+		addNode(11);
+		addNode(12);
+		addNode(13);
+		addNode(14);
+		addNode(15);
 
 		System.out.println("_____Level Order Traversal______");
 		topBottomLevelTranversal();
+
+		System.out.println("_____Level By Level Order Traversal______");
+		topBottomLevelByLevelTranversal();
 
 		System.out.println("_____Pre Order Traversal______");
 		preOrderTraversal();
@@ -48,6 +59,34 @@ public class BinaryTreeTraversals {
 		countFullNodes();
 	}
 
+	// Uses Queue and left to right
+	private static void topBottomLevelByLevelTranversal() {
+		Queue<treeNodeX> traverseQueue = new LinkedList<treeNodeX>();
+		Queue<treeNodeX> nextTraverseQueue = new LinkedList<treeNodeX>();
+		treeNodeX tmpTraverse = rootNode;
+		traverseQueue.add(tmpTraverse);
+//		traverseQueue.add(null);
+		while (!traverseQueue.isEmpty()) {
+			treeNodeX popNode = traverseQueue.remove();
+			if (popNode != null) {
+				System.out.print(popNode.data + "\t");
+				if (popNode.left != null) {
+					nextTraverseQueue.add(popNode.left);
+				}
+				if (popNode.right != null) {
+					nextTraverseQueue.add(popNode.right);
+				}
+				if (traverseQueue.isEmpty()) {
+					traverseQueue.addAll(nextTraverseQueue);
+					nextTraverseQueue.clear();
+					System.out.println();
+				}
+			}
+		}
+	}
+
+	// Uses 2 Stacks - one for currentLevel and another for Next Level
+	// 1 time "left to right" and other time "right to left"
 	public static void zigZagTraversal() {
 		treeNodeX tempX = rootNode;
 		Stack<treeNodeX> currentLevel = new Stack<treeNodeX>();
@@ -166,7 +205,9 @@ public class BinaryTreeTraversals {
 		if (rootNode == null)
 			return;
 		treeNodeX traverseNode = rootNode;
+		// Queue is used for traversal
 		Queue<treeNodeX> nodes = new LinkedList<>();
+		// Stack is used for storing the traversing elements
 		Stack<Integer> nodeVals = new Stack<Integer>();
 		nodes.add(traverseNode);
 		while (!nodes.isEmpty()) {

@@ -9,16 +9,16 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 		int arr[] = { 6, 4, 9, 2, 1, 4, 7 };
-		
+
 		// Looping through all the index from 0th to nth index
 		for (int i = 0; i < arr.length - 1; i++) {
-			
+
 			// Setting i'th element as minimum value to variable min
 			int min = arr[i];
 			// Iterate from i'th+1 element till last element
 			for (int j = i + 1; j < arr.length; j++) {
 //				System.out.println(i + "    " + j);
-				
+
 				// Compare j'th element value is minimum than var min
 				if (min > arr[j]) {
 					// then set the j'th element as new min variable value

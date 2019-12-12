@@ -24,13 +24,11 @@ public class HashMapSortByValue {
 	private static void SoryByValues(Map<String, Integer> map) {
 		List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(map.entrySet());
 		Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
-
 			@Override
 			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
 				// TODO Auto-generated method stub
 				return o1.getValue().compareTo(o2.getValue());
 			}
-
 		});
 		HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
 		for (Entry<String, Integer> entry : list) {

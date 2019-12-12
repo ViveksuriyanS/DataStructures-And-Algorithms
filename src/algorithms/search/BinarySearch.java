@@ -33,10 +33,10 @@ public class BinarySearch {
 			System.out.println("Number is found");
 			System.exit(0);
 		} else {
-			if (num >= arr[(size / 2) + 1]) {
-				binarySearchLogic(Arrays.copyOfRange(arr, (size / 2) + 1, size + 1), num);
-			} else {
+			if (num <= arr[(size / 2) + 1]) {
 				binarySearchLogic(Arrays.copyOfRange(arr, 0, (size / 2)), num);
+			} else {
+				binarySearchLogic(Arrays.copyOfRange(arr, (size / 2) + 1, size + 1), num);
 			}
 		}
 	}

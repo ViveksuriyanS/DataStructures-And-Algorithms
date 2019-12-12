@@ -12,11 +12,12 @@ public class InsertionSort {
 	public static int[] insertsort(int val[]) {
 		// we start the comparison from element 1 not from 0
 		// Thus splitting the array into two based on 0 to i || i to n
-		
-		for (int i = 1; i < val.length ; i++) {
+
+		for (int i = 1; i < val.length; i++) {
 			System.out.println(i);
 			int index = i;
 			// Looping in reverse order from i-1 to 0
+			// Reverse Bubble sort
 			for (int j = i - 1; j >= 0; j--) {
 				if (val[index] < val[j]) {
 					int temp = val[j];
@@ -33,8 +34,7 @@ public class InsertionSort {
 
 }
 
-
-// Best case O(n)
-// Worst case O(n2)
-// Avg. case O(n2)
+// Best case -> Omega O(n)
+// Worst case -> Big O O(n2)
+// Avg. case -> Theta O(n2)
 // Better comparable to Selection Sort and Bubble sort

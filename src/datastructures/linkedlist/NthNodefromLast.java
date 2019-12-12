@@ -9,6 +9,7 @@ public class NthNodefromLast {
 		createNode(51);
 		createNode(52);
 		createNode(53);
+		createNode(54);
 		printNodes();
 //		printNthNodeLast(7);
 		printNthNodeLast(2);

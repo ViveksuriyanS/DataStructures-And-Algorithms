@@ -37,7 +37,7 @@ public class ArrayQueue {
 				}
 				break;
 			case 4:
-				if(rearTail == maxSize-1) {
+				if (rearTail == maxSize - 1) {
 					System.out.println("Full");
 				} else {
 					System.out.println("Not full");
@@ -53,6 +53,7 @@ public class ArrayQueue {
 				System.out.println("Enter the element to be searched:");
 				System.out.println(isElementInArray(scan.nextInt()) ? "Present" : "Not present");
 			case 8:
+				scan.close();
 				System.exit(0);
 				break;
 			default:
@@ -100,8 +101,8 @@ public class ArrayQueue {
 
 	private static void rearrange() {
 		int arr = 0;
-		int tempNum[] = new int[number.length-1];
-		for (int i = 1; i < number.length ; i++) {
+		int tempNum[] = new int[number.length - 1];
+		for (int i = 1; i < number.length; i++) {
 			tempNum[arr] = number[i];
 			++arr;
 		}

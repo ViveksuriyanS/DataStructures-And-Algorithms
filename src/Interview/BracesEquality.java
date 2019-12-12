@@ -16,9 +16,11 @@ public class BracesEquality {
 			if (in.charAt(i) == '{' || in.charAt(i) == '(' || in.charAt(i) == '[') {
 				st.add(in.charAt(i));
 			} else {
+				// {()))
 				if (st.isEmpty()) {
 					return false;
 				}
+				// Check for exact match { -> }, ( -> ), [ -> ]
 				if ((in.charAt(i) == ')' && st.peek() != '(') || (in.charAt(i) != '}' && st.peek() == '{')
 						|| (in.charAt(i) == ']' && st.peek() != '[')) {
 					return false;

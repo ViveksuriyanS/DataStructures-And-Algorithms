@@ -1,2 +1,3 @@
-/Users/sviveksuriya/eclipse-workspace/DataStructure/src/datastructures/matrix/Queen4Problem.java
+/datastructures/matrix/Queen4Problem.java
 
+/DataStructure/src/datastructures/string/ZigZagString.java

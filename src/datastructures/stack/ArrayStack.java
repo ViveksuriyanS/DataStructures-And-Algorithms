@@ -52,8 +52,9 @@ public class ArrayStack {
 				break;
 			case 7:
 				System.out.println("Enter the element to be searched:");
-				System.out.println(isElementInArray(scan.nextInt())? "Present" : "Not present");
+				System.out.println(isElementInArray(scan.nextInt()) ? "Present" : "Not present");
 			case 8:
+				scan.close();
 				System.exit(0);
 				break;
 			default:
@@ -66,7 +67,7 @@ public class ArrayStack {
 		boolean flag = false;
 
 		for (int i = 0; i < number.length; i++) {
-			if(number[i] == num) {
+			if (number[i] == num) {
 				flag = true;
 				break;
 			}

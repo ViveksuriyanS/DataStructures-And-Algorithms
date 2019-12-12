@@ -17,11 +17,11 @@ public class EuclideanGCF {
 			int y = Math.min(a, b);
 			// Negating y from x and storing it in c
 			c = x - y;
-
+			System.out.println("a=" + a + " b=" + b + " c=" + c);
 			// Setting value of y to a and c to b for next recrusive call
 			a = y;
 			b = c;
-			System.out.println("a=" + x + " b=" + y + " c=" + c);
+			
 			gcf(a, b);
 		} else {
 			System.out.println(a + " is the GCD");
