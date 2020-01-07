@@ -16,10 +16,11 @@ public class PairKey {
 		// TODO Auto-generated method stub
 		Map<Integer, Integer> keyMap = new HashMap<Integer, Integer>();
 		for (int x : arr) {
+			int y = sum - x;
 			if (keyMap.get(x) == null) {
-				keyMap.put(sum - x, x);
+				keyMap.put(y, x);
 			} else {
-				System.out.println(keyMap.get(x) + " and " + x + " are the pairs");
+				System.out.println(y + " and " + x + " are the pairs");
 			}
 		}
 	}
