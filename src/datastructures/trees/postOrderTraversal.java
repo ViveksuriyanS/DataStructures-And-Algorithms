@@ -11,10 +11,12 @@ public class postOrderTraversal {
 		createtreeY(1);
 		createtreeY(2);
 		createtreeY(3);
-//		createtreeY(4);
-//		createtreeY(5);
-//		createtreeY(6);
-//		createtreeY(7);
+		createtreeY(4);
+		createtreeY(5);
+		createtreeY(6);
+		createtreeY(7);
+		createtreeY(8);
+		createtreeY(9);
 		postOrderTravserse();
 	}
 
@@ -22,21 +24,30 @@ public class postOrderTraversal {
 	private static void postOrderTravserse() {
 		if (root == null)
 			return;
-		
+
 		Stack<treeY> traverse = new Stack<treeY>();
 		traverse.add(root);
-		treeY currN = traverse.peek();
+
 		while (!traverse.isEmpty()) {
-			
-			if (currN.getRightX() != null) {
-				traverse.add(currN.getRightX());
-			} 
-			if (currN.getLeftX() != null) {
-				traverse.add(currN.getLeftX());
-			} 
-			currN = traverse.pop();
-			if(currN.getLeftX() == null && currN.getRightX() == null)
+			treeY currN = traverse.peek();
+			// Checking if this node has any child or not
+			if (currN.getLeftX() == null && currN.getRightX() == null) {
+				// Remove the node and print the value
+				currN = traverse.pop();
 				System.out.println(currN.getData());
+			} else {
+				// If current node has right node then add it to stack
+				if (currN.getRightX() != null) {
+					traverse.add(currN.getRightX());
+					currN.setRightX(null);
+				}
+				// If current node has left node then add it to the stack
+				if (currN.getLeftX() != null) {
+					traverse.add(currN.getLeftX());
+					currN.setLeftX(null);
+				}
+			}
+
 		}
 	}
 

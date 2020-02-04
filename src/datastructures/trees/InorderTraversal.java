@@ -64,6 +64,7 @@ public class InorderTraversal {
 			nodes.add(root);
 			while (!nodes.isEmpty()) {
 				Node currentNode = nodes.remove();
+				
 				// Check for left availability
 				if (currentNode.leftNode == null) {
 					currentNode.leftNode = node;
@@ -71,6 +72,7 @@ public class InorderTraversal {
 				} else {
 					nodes.add(root.leftNode);
 				}
+				
 				// Check for right availability
 				if (currentNode.rightNode == null) {
 					currentNode.rightNode = node;

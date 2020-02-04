@@ -28,6 +28,7 @@ public class BFS_LevelOrderTraversal {
 			nodes.add(root);
 			while (!nodes.isEmpty()) {
 				Node currentNode = nodes.remove();
+				
 				// Check for left availability
 				if (currentNode.leftNode == null) {
 					currentNode.leftNode = node;
@@ -35,6 +36,7 @@ public class BFS_LevelOrderTraversal {
 				} else {
 					nodes.add(root.leftNode);
 				}
+				
 				// Check for right availability
 				if (currentNode.rightNode == null) {
 					currentNode.rightNode = node;
@@ -80,3 +82,5 @@ class Node {
 }
 
 // Also known as Breadth First Search
+// Also known as level order tree
+// Will process all the connected node of a tree node in order by order

@@ -80,6 +80,7 @@ public class SimpleDoublyLinkedList {
 		return newNode;
 	}
 
+	// Print the reverse list
 	public static void printListReverse() {
 		DLLNode tempNode = tailNode;
 		if (tailNode != null) {
@@ -91,6 +92,7 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Print the list
 	public static void printList() {
 		DLLNode tempNode = headNode;
 		if (headNode != null) {
@@ -103,8 +105,10 @@ public class SimpleDoublyLinkedList {
 
 	}
 
+	// Inserting the element before head node
 	public static void insertAtHead(int data) {
 		DLLNode newNode = createNode(data);
+		// If headNode is null, create list
 		if (headNode == null) {
 			headNode = newNode;
 			tailNode = newNode;
@@ -117,8 +121,10 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Inserting element at the end of the list
 	public static void insertAtTail(int data) {
 		DLLNode newNode = createNode(data);
+		// If tailNode is null, then create list
 		if (tailNode == null) {
 			headNode = newNode;
 			tailNode = newNode;
@@ -130,10 +136,12 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Inserting the element after element X
 	public static void insertAfterElement(int searchData, int data) {
 		DLLNode newNode = createNode(data);
 		DLLNode tempNode = headNode;
 		boolean found = false;
+		// Iterating till we find the element
 		while (tempNode.nextNode != null) {
 			if (tempNode.data == searchData) {
 				found = true;
@@ -146,6 +154,7 @@ public class SimpleDoublyLinkedList {
 			found = true;
 			tailNode = newNode;
 		}
+		// Inserting after the element
 		if (found) {
 			System.out.println("Element is found" + searchData + " " + data);
 			// Element is at first node
@@ -161,6 +170,7 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Inserting the element before element X
 	public static void insertBeforeElement(int searchData, int data) {
 		DLLNode newNode = createNode(data);
 		DLLNode tempNode = tailNode;
@@ -189,6 +199,7 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Searching the element in list
 	public static void searchElement(int data) {
 		DLLNode tempNode = headNode;
 		int counter = 1;
@@ -209,16 +220,19 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Deleting the head node element
 	public static void deleteHead() {
 		headNode = headNode.nextNode;
 		headNode.prevNode = null;
 	}
 
+	// Deleting the tail node element
 	public static void deleteTail() {
 		tailNode = tailNode.prevNode;
 		tailNode.nextNode = null;
 	}
 
+	// Deleting the element after element X
 	public static void deleteAfterElement(int data) {
 		DLLNode tempNode = headNode;
 		while (tempNode.nextNode != null) {
@@ -237,6 +251,7 @@ public class SimpleDoublyLinkedList {
 		}
 	}
 
+	// Deleting the element before element X
 	public static void deleteBeforeElement(int data) {
 		DLLNode tempNode = tailNode;
 		while (tempNode.prevNode != null) {

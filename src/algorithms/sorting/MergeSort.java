@@ -15,7 +15,8 @@ public class MergeSort {
 			mergeSubArray(array, low, mid, high);
 		}
 	}
-
+	
+	// Merge the split arrays
 	private static void mergeSubArray(int[] array, int low, int mid, int high) {
 		int leftLength = mid - low + 1;
 		int rightLength = high - mid;

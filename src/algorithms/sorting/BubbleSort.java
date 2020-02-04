@@ -14,12 +14,13 @@ public class BubbleSort {
 		boolean isSwapDone = true;
 		// Looping through the array and also checking the condition whether sorting
 		// needs to be done or not.
+		// Loop to repeat the same process 'n' number of times till numbers are sorted
 		for (int i = 0; i < arrVal.length && isSwapDone; i++) {
 			// Changing the value as false to check swap is required
 			isSwapDone = false;
 			System.out.println(Arrays.toString(arrVal));
-			// 2nd loop to compare with the values of loop i
-			for (int j = 0; j < arrVal.length - i - 1; j++) {
+			// Loop to do the comparison
+			for (int j = 0; j < arrVal.length - 1 - i; j++) {
 				// If A value is lesser than the next value B, then swap the element in array
 				if (arrVal[j] > arrVal[j + 1]) {
 					int temp = arrVal[j];
@@ -47,3 +48,21 @@ public class BubbleSort {
 // 2nd time arrVal.length-2
 // 3nd time arrVal.length-3
 // in generic arrVal.length-i-1
+
+// 5 4 3 2 1
+// Iteration 1
+// (5 4) 3 2 1 =>  (4 5) 3 2 1
+// 4 (5 3) 2 1 =>  4 (3 5) 2 1
+// 4 3 (5 2) 1 =>  4 3 (2 5) 1
+// 4 3 2 (5 1) =>  4 3 2 (1 5)
+
+// 4 3 2 1 5  => After Iteration 1
+
+// Iteration 2
+
+// (4 3) 2 1 | 5 => (3 4) 2 1 5
+// 3 (4 2) 1 | 5 => 3 (2 4) 1 5
+// 3 2 (4 1) | 5 => 3 2 (1 4) 5
+// 3 2 1 (4 5) => 3 2 1 (4 5)
+
+// 3 2 1 4 5 => After Iteration 2

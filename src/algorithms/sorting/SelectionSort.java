@@ -42,3 +42,7 @@ public class SelectionSort {
 // Complexity of the algorithm
 // O(n2)
 // Slow sorting algorithm
+// Algorithm
+// 1. Iterate i = 0 to i -1
+// 2. For each iteration, find the min. value from sub array (i+1 to n)
+// 3. If min value found then swap the value of value[minValIndex] with the value[i]

@@ -61,7 +61,9 @@ public class BinaryTreeTraversals {
 
 	// Uses Queue and left to right
 	private static void topBottomLevelByLevelTranversal() {
+		// Queue to store the current level
 		Queue<treeNodeX> traverseQueue = new LinkedList<treeNodeX>();
+		// Queue to store the next level
 		Queue<treeNodeX> nextTraverseQueue = new LinkedList<treeNodeX>();
 		treeNodeX tmpTraverse = rootNode;
 		traverseQueue.add(tmpTraverse);
@@ -125,6 +127,7 @@ public class BinaryTreeTraversals {
 	}
 
 	// Insert left first then right, uses Stack
+	// AB+
 	public static void postOrderTraversal() {
 		if (rootNode == null)
 			return;
@@ -153,6 +156,7 @@ public class BinaryTreeTraversals {
 	}
 
 	// Insert right first then left, uses stack
+	// +AB
 	public static void preOrderTraversal() {
 		if (rootNode == null)
 			return;
@@ -161,14 +165,17 @@ public class BinaryTreeTraversals {
 		while (!nodes.isEmpty()) {
 			treeNodeX currentNode = nodes.pop();
 			System.out.println(currentNode.getData());
+			// LIFO - Add right first to process later
 			if (currentNode.getRight() != null)
 				nodes.push(currentNode.getRight());
+			// Add left at last to process first
 			if (currentNode.getLeft() != null)
 				nodes.push(currentNode.getLeft());
 		}
 	}
 
 	// Insert left then right and uses stack
+	// A+B
 	private static void inOrderTraversal() {
 		// Return the call, if the root node is empty
 		if (rootNode == null)
@@ -227,17 +234,27 @@ public class BinaryTreeTraversals {
 
 	// Insert left then right, uses Queue
 	public static void topBottomLevelTranversal() {
+		// If tree is an empty tree
 		if (rootNode == null)
 			return;
+
+		// Set a root node to tempNode
 		treeNodeX traverseNode = rootNode;
+		// Declaring Queue
 		Queue<treeNodeX> nodes = new LinkedList<>();
 		nodes.add(traverseNode);
 		while (!nodes.isEmpty()) {
 			treeNodeX tmpNode = nodes.remove();
+
+			// Print the current processing data
 			System.out.println(tmpNode.getData());
+
+			// Process left side
 			if (tmpNode.getLeft() != null) {
 				nodes.add(tmpNode.getLeft());
 			}
+
+			// Process right side
 			if (tmpNode.getRight() != null) {
 				nodes.add(tmpNode.getRight());
 			}
