@@ -5,7 +5,7 @@ public class FibonacciSeries {
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
 			System.out.println(fibonacciX(i));
-			System.out.println(fibonacciY(i));
+			System.out.println(fibonacciRecursive(i));
 		}
 	}
 
@@ -24,7 +24,7 @@ public class FibonacciSeries {
 		return newFib;
 	}
 
-	private static int fibonacciY(int size) {
+	private static int fibonacciRecursive(int size) {
 
 		if (size == 0) {
 			return 0;
@@ -33,7 +33,7 @@ public class FibonacciSeries {
 			return 1;
 		}
 
-		return fibonacciY(size - 1) + fibonacciY(size - 2);
+		return fibonacciRecursive(size - 1) + fibonacciRecursive(size - 2);
 
 	}
 }

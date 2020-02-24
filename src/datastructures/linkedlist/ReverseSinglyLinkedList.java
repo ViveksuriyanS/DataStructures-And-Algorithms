@@ -8,8 +8,27 @@ public class ReverseSinglyLinkedList {
 	public static void main(String[] args) {
 		head = SinglyLinkedListImpl.sampleList();
 		SinglyLinkedListImpl.printNodes(head);
+		// Reverse using Stack
 		NodeEntitySLL newHead = reverseLinkedList(head);
 		SinglyLinkedListImpl.printNodes(newHead);
+		// Reverse iteratively
+		NodeEntitySLL newHead1 = reverseLinkedList1(head);
+		SinglyLinkedListImpl.printNodes(newHead1);
+
+	}
+
+	private static NodeEntitySLL reverseLinkedList1(NodeEntitySLL currentNode) {
+		NodeEntitySLL prevNode = null;
+		NodeEntitySLL nextNode;
+
+		while (currentNode != null) {
+			nextNode = currentNode.node;
+			currentNode.node = prevNode;
+			prevNode = currentNode;
+			currentNode = nextNode;
+
+		}
+		return prevNode;
 	}
 
 	// Using Stack

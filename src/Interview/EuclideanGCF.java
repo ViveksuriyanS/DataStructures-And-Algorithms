@@ -3,25 +3,20 @@ package Interview;
 public class EuclideanGCF {
 
 	public static void main(String[] args) {
-		int a = 12;
+		int a = 15;
 		int b = 5;
 		gcf(a, b);
 	}
 
 	public static void gcf(int a, int b) {
-		int c = 0;
 		if (a != b) {
-			// Finding the maximum between a and b
-			int x = Math.max(a, b);
-			// Finding the minimum between a and b
-			int y = Math.min(a, b);
-			// Negating y from x and storing it in c
-			c = x - y;
+			int c = Math.abs(a - b);
+
 			System.out.println("a=" + a + " b=" + b + " c=" + c);
-			// Setting value of y to a and c to b for next recrusive call
-			a = y;
+			// Setting value of y to a and c to b for next recursive call
+			a = b;
 			b = c;
-			
+
 			gcf(a, b);
 		} else {
 			System.out.println(a + " is the GCD");
