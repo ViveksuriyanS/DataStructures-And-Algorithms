@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class DequeueExample {
 	public static void main(String[] args) {
-		// Intializing an deque Double Ended QUEue
+		// Initializing an deque Double Ended QUEue
 		Deque<Integer> de_que = new ArrayDeque<Integer>(10);
 		// add() method to insert
 		de_que.add(10);

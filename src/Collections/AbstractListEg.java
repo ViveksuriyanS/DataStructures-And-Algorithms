@@ -22,6 +22,8 @@ public class AbstractListEg {
 			}
 		};
 		System.out.println(list);
+		list.add(4);
+		System.out.println(list);
 	}
 
 }

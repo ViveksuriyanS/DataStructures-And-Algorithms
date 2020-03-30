@@ -15,6 +15,7 @@ public class ArrayDequeueSort {
 		arrdeq.addLast(321);
 		System.out.println(arrdeq.contains(56));
 		System.out.println(arrdeq);
+		System.out.println(arrdeq.remove());
 		
 
 	}

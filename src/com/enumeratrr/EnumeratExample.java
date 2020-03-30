@@ -30,7 +30,7 @@ public class EnumeratExample {
 
 
 // ------ Enumerator ------- Can be used by enumerator()
-// Used only for legacy collections like Vector and Hashtable
+// Used only for legacy collections like Vector and HashTable
 // Classic type of enumeration
 // Can fetch element only forward directional
 // hasMoreElements() .... elements() ..... nextElement()...
@@ -42,7 +42,7 @@ public class EnumeratExample {
 // Only forward accessing of data
 
 
-// ------ ListIterator ------ Can be used by listiterator()
+// ------ ListIterator ------ Can be used by listIterator()
 
 // It includes replacement or addition of element into the list while iterating
 // It is bidirectional accessing of data

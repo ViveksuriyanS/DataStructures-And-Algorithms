@@ -30,6 +30,7 @@ public class HashMapSortByValue {
 				return o1.getValue().compareTo(o2.getValue());
 			}
 		});
+		
 		HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
 		for (Entry<String, Integer> entry : list) {
 			temp.put(entry.getKey(), entry.getValue());

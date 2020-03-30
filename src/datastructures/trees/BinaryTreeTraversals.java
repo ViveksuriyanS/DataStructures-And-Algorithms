@@ -191,6 +191,7 @@ public class BinaryTreeTraversals {
 		treeNodeX currentNode = rootNode;
 
 		while (done) {
+			// Keep on traversing to the left
 			if (currentNode != null) {
 				nodes.push(currentNode);
 				currentNode = currentNode.getLeft();
