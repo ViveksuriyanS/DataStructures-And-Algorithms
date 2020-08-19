@@ -2,7 +2,10 @@ package algorithms.sorting;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class SelectionSort_byvalue {
+
+	// To get the minimum value index to swap
+	static int destIndex;
 
 	public static void main(String[] args) {
 		int arr[] = { 6, 4, 9, 2, 1, 4, 7 };
@@ -10,23 +13,26 @@ public class SelectionSort {
 		// Looping through all the index from 0th to nth index
 		for (int i = 0; i < arr.length - 1; i++) {
 
-			// Setting index i as minimum value index to variable min
-			int min = i;
+			// Setting i'th element as minimum value to variable min
+			int min = arr[i];
 			// Iterate from i'th+1 element till last element
 			for (int j = i + 1; j < arr.length; j++) {
 //				System.out.println(i + "    " + j);
 
 				// Compare j'th element value is minimum than var min
-				if (arr[min] > arr[j]) {
+				if (min > arr[j]) {
 					// then set the j'th element as new min variable value
-					min = j;
+					min = arr[j];
+					destIndex = j;
 				}
 			}
 //			System.out.println("Min value " + min);
 //			System.out.println(Arrays.toString(arr));
-			int temp = arr[i];
-			arr[i] = arr[min];
-			arr[min] = temp;
+			if (arr[i] != min) {
+				int temp = arr[i];
+				arr[i] = min;
+				arr[destIndex] = temp;
+			}
 			System.out.println(Arrays.toString(arr));
 		}
 	}
