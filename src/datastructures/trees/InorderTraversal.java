@@ -17,6 +17,7 @@ public class InorderTraversal {
 		addNode(6);
 		addNode(7);
 		inorderTraverse1();
+		inorderTraversal();
 	}
 
 	private static void inorderTraverse1() {
@@ -55,6 +56,25 @@ public class InorderTraversal {
 		}
 	}
 
+	//A+B
+	public static void inorderTraversal() {
+		Stack<Node> nodes = new Stack<Node>();
+		Node currentNode = root;
+		while(true) {
+			if(currentNode != null) {
+				nodes.push(currentNode);
+				currentNode = currentNode.leftNode;
+			} else {
+				if(nodes.isEmpty()) {
+					break;
+				}
+				currentNode = nodes.pop();
+				System.out.println(currentNode.data);
+				currentNode = currentNode.rightNode;
+			}
+		}
+	}
+	
 	public static void addNode(int data) {
 		Node node = new Node(data);
 		if (root == null) {

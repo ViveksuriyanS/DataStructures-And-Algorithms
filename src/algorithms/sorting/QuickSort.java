@@ -5,7 +5,9 @@ import java.util.Arrays;
 public class QuickSort {
 
 	public static void main(String[] args) {
-		int vals[] = { 7, 3, 9, 8, 2, 1, 4, 6, 5 };
+		//int vals[] = { 7, 3, 9, 8, 2, 1, 4, 6, 5 };
+		int vals[] = { 10, 80, 30, 90, 40, 50, 70 };
+
 		quicksort(vals, 0, vals.length - 1);
 	}
 

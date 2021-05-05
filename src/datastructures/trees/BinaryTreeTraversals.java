@@ -15,15 +15,15 @@ public class BinaryTreeTraversals {
 		addNode(4);
 		addNode(5);
 		addNode(6);
-		addNode(7);
-		addNode(8);
-		addNode(9);
-		addNode(10);
-		addNode(11);
-		addNode(12);
-		addNode(13);
-		addNode(14);
-		addNode(15);
+//		addNode(7);
+//		addNode(8);
+//		addNode(9);
+//		addNode(10);
+//		addNode(11);
+//		addNode(12);
+//		addNode(13);
+//		addNode(14);
+//		addNode(15);
 
 		System.out.println("_____Level Order Traversal______");
 		topBottomLevelTranversal();

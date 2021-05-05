@@ -2,7 +2,7 @@ package algorithms.sorting;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class InsertionSortBySwap {
 
 	public static void main(String[] args) {
 		int vals[] = { 11, 7, 3, 9, 8, 2, 1, 4, 6, 5 };
@@ -11,34 +11,29 @@ public class InsertionSort {
 
 	public static int[] insertsort(int val[]) {
 		// we start the comparison from element 1 not from 0
-		// Thus splitting the array into two based on 0 to i (Sorted) || i to n
-		// (Unsorted)
+		// Thus splitting the array into two based on 0 to i || i to n
 
-		int i, j, insertVal;
 		// Start iterating element one by one from index '1'
-		for (i = 1; i < val.length; i++) {
-
-			// Setting the value to be checked in a variable
-			insertVal = val[i];
-
+		for (int i = 1; i < val.length; i++) {
+			System.out.println(val[i]);
+			int index = i;
+			boolean isSwap = true;
 			// Looping in reverse order from i-1 to 0
-			// Also having a condition to check if the insertValue is less than the j'th element in sorted sub array
-			for (j = i - 1; j >= 0 && (val[j] > insertVal); --j) {
-
-				// Check if the value to be inserted is lesser than the last node of sorted
-				// array
-
-				// Eg. 8 11 12 | '10' 9 -> insertVal = 10 and j-> 2 , i -> 3
-
-				// Shift value by one place to create a space for insertion
-				val[j + 1] = val[j]; // Repeat till condition fails
-				// Eg. 8 11 12 | 12 9 -> insertVal = 10 and j-> 2 , i -> 3
-				// Eg. 8 11 11 | 12 9 -> insertVal = 10 and j-> 1 , i -> 3
-				// Eg. 8 11 11 | 12 9 -> insertVal = 10 and j-> 0 , i -> 3 (Condition fail)
-
+			// Reverse Bubble sort
+			for (int j = i - 1; j >= 0 && isSwap; j--) {
+				isSwap = false;
+				// Value from unsorted array is more than the value in sorted array, then swap
+				if (val[index] < val[j]) {
+					int temp = val[j];
+					val[j] = val[index];
+					val[index] = temp;
+					index = j;
+					// Skip if no comparison needs to be done
+					isSwap = true;
+					System.out.println(Arrays.toString(val));
+				}
 			}
-			val[j + 1] = insertVal;
-			System.out.println(Arrays.toString(val));
+			System.out.println("_____________");
 		}
 
 		return null;

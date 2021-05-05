@@ -41,6 +41,7 @@ public class preOrderTraversal {
 	}
 
 	private static void createTreeX(int data) {
+
 		treeX node = new treeX();
 		node.setData(data);
 		node.setLeftX(null);
@@ -69,7 +70,10 @@ public class preOrderTraversal {
 			}
 		}
 	}
+
 }
+
+
 
 class treeX {
 	int data;

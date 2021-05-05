@@ -7,13 +7,16 @@ import java.util.Map;
 public class LongestPalindromeSubstring {
 
 	public static void main(String[] args) {
-		String inputString = "abacadf";
+		String inputString = "fcabacadf";
 		String checkString = "";
 		Map<String, Integer> pal = new HashMap<String, Integer>();
 		for (int i = 0; i < inputString.length(); i++) {
-			checkString += inputString.charAt(i);
-			if (Palindrome.checkPalindrome(checkString)) {
-				pal.put(checkString, checkString.length());
+			for (int j = i; j < inputString.length(); j++) {
+				System.out.println(inputString.substring(i, j));
+				checkString = inputString.substring(i, j);
+				if (Palindrome.checkPalindrome(checkString)) {
+					pal.put(checkString, checkString.length());
+				}
 			}
 		}
 

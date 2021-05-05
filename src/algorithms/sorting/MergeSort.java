@@ -3,7 +3,7 @@ package algorithms.sorting;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		int vals[] = { 7, 3, 9, 8, 2, 1, 4, 6, 5 };
+		int vals[] = { 7, 3, 9 };
 		mergeSort(vals, 0, vals.length - 1);
 	}
 
@@ -17,7 +17,7 @@ public class MergeSort {
 	}
 	
 	// Merge the split arrays
-	private static void mergeSubArray(int[] array, int low, int mid, int high) {
+	private static void mergeSubArray(int[] array, int low /*left*/, int mid /*center*/, int high /*right*/) {
 		int leftLength = mid - low + 1;
 		int rightLength = high - mid;
 		int leftArr[] = new int[leftLength];
@@ -36,7 +36,7 @@ public class MergeSort {
 		// Initial indexes of first and second subarrays
 		int i = 0, j = 0;
 
-		// Initial index of merged subarry array
+		// Initial index of merged sub-array array
 		int k = low;
 		while (i < leftLength && j < rightLength) {
 			if (leftArr[i] <= rightArr[j]) {

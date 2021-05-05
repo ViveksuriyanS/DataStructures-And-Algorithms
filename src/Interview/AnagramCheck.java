@@ -53,3 +53,6 @@ public class AnagramCheck {
 	}
 
 }
+
+// This solution is not efficient
+// Check in JavaPrograms-> String

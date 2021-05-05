@@ -15,7 +15,7 @@ public class BubbleSort {
 		// Looping through the array and also checking the condition whether sorting
 		// needs to be done or not.
 		// Loop to repeat the same process 'n' number of times till numbers are sorted
-		for (int i = 0; i < arrVal.length && isSwapDone; i++) {
+		for (int i = 0; i < arrVal.length - 1 && isSwapDone; i++) {
 			// Changing the value as false to check swap is required
 			isSwapDone = false;
 			System.out.println(Arrays.toString(arrVal));

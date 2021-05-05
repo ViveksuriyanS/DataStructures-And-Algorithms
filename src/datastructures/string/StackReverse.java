@@ -15,7 +15,7 @@ public class StackReverse {
 		for (int i = s.length() - 1; i >= 0; i--) {
 			stack.push(s.charAt(i));
 		}
-		// System.out.println(stack.toString());
+		System.out.println(stack.toString());
 	}
 
 	public static void withPop(String st) {
