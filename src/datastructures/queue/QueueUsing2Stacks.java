@@ -33,6 +33,7 @@ public class QueueUsing2Stacks {
 			}
 		}
 
+		// After adding elements from S1, check if it is still empty
 		if (st2.isEmpty()) {
 			System.out.println("Queue is empty");
 			return;

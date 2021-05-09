@@ -54,6 +54,6 @@ public class QuickSort {
 	}
 }
 
-// Unlike Merge Sort, it is IN-PLACE sorting technique. So it doen't need extra space
+// Unlike Merge Sort, it is IN-PLACE sorting technique. So it doesn't need extra space
 // O(nlogn) -> Time complexity on Best and Average case scenario
 // O(n^2) -> Worst Case (can be avoided by making pivot element at random place)

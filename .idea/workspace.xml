@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,17 +23,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12734edd-5838-439e-b446-458a7ce4a081" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Interview/BracesEqualityTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Competitive/RemoveStringStartsWithA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/queue/DoubleEndedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/ListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/stack/StackUsingQueues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/AbstractListEg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/AbstractListEg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/ArrayDequeueSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/ArrayDequeueSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/HashMapSortByValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/HashMapSortByValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/ImmutableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/ImmutableClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interview/TreeZigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/TreeZigZagTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/queue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/queue/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/queue/CircularQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/queue/QueueUsing2Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/queue/QueueUsing2Stacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/ArrayStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1s7GhGUbUp6r3hMteYv7aCjPKca" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,19 +85,72 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.search.BinarySearch" />
+  <component name="RunManager" selected="Application.MiddleNode">
+    <configuration name="AbstractListEg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.AbstractListEg" />
       <module name="DataStructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.search.*" />
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeueSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.ArrayDequeueSort" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapLinked_LRU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collections.HashMapLinked_LRU" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiddleNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.linkedlist.MiddleNode" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructures.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoveStringStartsWithA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Competitive.RemoveStringStartsWithA" />
+      <module name="DataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.Competitive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,10 +160,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.MiddleNode" />
+        <item itemvalue="Application.RemoveStringStartsWithA" />
+        <item itemvalue="Application.HashMapLinked_LRU" />
+        <item itemvalue="Application.ArrayDequeueSort" />
+        <item itemvalue="Application.AbstractListEg" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,31 +192,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1620216911140">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.796@0.23.1440.796" timestamp="1620216911140" />
-    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1620216911140">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.796@0.23.1440.796" timestamp="1620216911140" />
-    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1620216911139">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.796@0.23.1440.796" timestamp="1620216911139" />
-    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1620216911140">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.796@0.23.1440.796" timestamp="1620216911140" />
-    <state x="221" y="23" key="SettingsEditor" timestamp="1620216840216">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state x="221" y="23" key="SettingsEditor/0.23.1440.796@0.23.1440.796" timestamp="1620216840216" />
-    <state x="430" y="320" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1620216655429">
-      <screen x="0" y="23" width="1440" height="796" />
-    </state>
-    <state x="430" y="320" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.796@0.23.1440.796" timestamp="1620216655429" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/datastructures/stack/ListStack.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,7 +26,7 @@ public class ArrayStack {
 			case 1:
 				System.out.println("Enter the element to be added");
 				if (isFull()) {
-					System.out.println("The stack is full elements cannot be addded.");
+					System.out.println("The stack is full elements cannot be added.");
 				} else {
 					push(scan.nextInt());
 				}
@@ -77,13 +77,11 @@ public class ArrayStack {
 	}
 
 	private static void push(int newElement) {
-		++top;
-		number[top] = newElement;
+		number[++top] = newElement;
 	}
 
 	private static void pop() {
-		System.out.println(number[top] + " is deleted.");
-		--top;
+		System.out.println(number[top--] + " is deleted.");
 	}
 
 	private static void listElements() {

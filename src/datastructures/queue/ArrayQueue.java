@@ -20,7 +20,8 @@ public class ArrayQueue {
 			System.out.println("3 - Empty?");
 			System.out.println("4 - Full?");
 			System.out.println("5 - Show all elements");
-			System.out.println("6 - Exit");
+			System.out.println("7 - Search element");
+			System.out.println("8 - Exit");
 			switch (scan.nextInt()) {
 			case 1:
 				System.out.println("Enter the element to be added");

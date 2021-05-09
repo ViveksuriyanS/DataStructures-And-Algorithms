@@ -29,5 +29,5 @@ public class AbstractListEg {
 }
 
 // Implements Collection Interface and AbstractCollection Class
-// Used to implement unmodifiable list
+// Used to implement unmodifiable list by having only get method
 // Abstract Class is a kind of singleton class

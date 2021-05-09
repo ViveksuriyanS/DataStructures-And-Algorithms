@@ -21,15 +21,26 @@ public class TreeZigZagTraversal {
 
 	public static void print(TreeDS rootTmp) {
 		Queue<TreeDS> result = new LinkedList<TreeDS>();
+		boolean isLeftToRight = true;
 		result.add(rootTmp);
 		while (!result.isEmpty()) {
 			TreeDS current = result.remove();
 			System.out.println(current.data);
-			if (current.left != null) {
-				result.add(current.left);
-			}
-			if (current.right != null) {
-				result.add(current.right);
+			if(isLeftToRight) {
+				if (current.left != null) {
+					result.add(current.left);
+				}
+				if (current.right != null) {
+					result.add(current.right);
+				}
+				isLeftToRight = false;
+			} else {
+				if (current.right != null) {
+					result.add(current.right);
+				}
+				if (current.left != null) {
+					result.add(current.left);
+				}
 			}
 
 		}
