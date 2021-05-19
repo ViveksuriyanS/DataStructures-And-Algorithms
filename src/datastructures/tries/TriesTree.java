@@ -124,7 +124,7 @@ class TrieNode {
 	boolean endOfString;
 
 	public TrieNode() {
-		children = new HashMap<Character, TrieNode>();
+		children = new HashMap<>();
 		endOfString = false;
 	}
 }

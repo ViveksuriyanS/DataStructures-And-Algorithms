@@ -15,6 +15,10 @@ public class QueueUsing2Stacks {
 		QueueUsing2Stacks.enqueue(1);
 		System.out.println("Elements will be popped out as per the insertion order 5..4..3..2..1");
 		QueueUsing2Stacks.dequeue();
+		QueueUsing2Stacks.enqueue(5);
+		QueueUsing2Stacks.enqueue(4);
+		QueueUsing2Stacks.dequeue();
+		QueueUsing2Stacks.dequeue();
 		QueueUsing2Stacks.dequeue();
 		QueueUsing2Stacks.dequeue();
 		QueueUsing2Stacks.dequeue();

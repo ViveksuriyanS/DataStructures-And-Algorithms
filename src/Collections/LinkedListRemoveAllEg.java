@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class LinkedListRemoveAllEg {
 
@@ -15,12 +16,24 @@ public class LinkedListRemoveAllEg {
 		li.add("A");
 		li.add("A5");
 		li.add("A6");
-		
+
 		List<String> lis = new LinkedList<String>();
 		lis.add("A");
 		
 		li.removeAll(lis);
 		System.out.println(li);
+
+		ListIterator<String> listIterator= li.listIterator();
+		// First to Last
+		while(listIterator.hasNext()) {
+			System.out.println(listIterator.next());
+		}
+		// Now listIterator is at last
+		// Last to First
+		while(listIterator.hasPrevious()) {
+			System.out.println(listIterator.previous());
+		}
+
 	}
 }
 
