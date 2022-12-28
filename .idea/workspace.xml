@@ -23,45 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12734edd-5838-439e-b446-458a7ce4a081" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/Immutable/ImmutacleListEg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/DesignPatterns/FactoryPatternEg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/DesignPatterns/SingletonThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interview/ThreadRunTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/InfixToPostfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/InfixToPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/PostfixToInfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/PostfixToPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/PrefixToInfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algorithms/expression/conversion/PrefixToPostfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/BinaryTreeImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/BinaryTreePreOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/BottomViewTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/DistanceNodeTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/LeftViewTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/LevelByLevelOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/LevelOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/RightViewTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/SumOfAllNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/TopViewTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructures/trees/LearnJavaWithTechie/VerticalOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/IsValidNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/LongestPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/LongestSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/MergeTwoSortedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/MissingSequenceNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/NumberPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/ReverseNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/RomanToInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/easy/ValidParanthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/1CodeStream/datastructure/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datastructures/linkedlist/RemoveDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/medium/FindAreaFromArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/LinkedListRemoveAllEg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/LinkedListRemoveAllEg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/ImmutableClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/ImmutableClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interview/SingletonClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/DesignPatterns/SingletonClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/queue/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/queue/CircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/queue/QueueUsing2Stacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/queue/QueueUsing2Stacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/tries/TriesTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/tries/TriesTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/linkedlist/SinglyLinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/linkedlist/SinglyLinkedListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructures/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/stack/ArrayStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +57,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -223,7 +195,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

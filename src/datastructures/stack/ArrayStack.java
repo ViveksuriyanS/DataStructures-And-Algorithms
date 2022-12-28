@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class ArrayStack {
 
-	static int number[];
-	static int top = -1;
+	static int stackArray[];
+	static int top;
 	static int maxSize;
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the size of the stack");
 		maxSize = scan.nextInt();
-		number = new int[maxSize];
 		while (true) {
+			System.out.println("0 - Initialize Stack");
 			System.out.println("1 - Push Element");
 			System.out.println("2 - Pop Element");
 			System.out.println("3 - Empty?");
@@ -23,6 +23,10 @@ public class ArrayStack {
 			System.out.println("8 - Search element");
 			System.out.println("8 - Exit");
 			switch (scan.nextInt()) {
+				case 0:
+					System.out.println("Initializing Stack");
+					initializeStack(maxSize);
+					break;
 			case 1:
 				System.out.println("Enter the element to be added");
 				if (isFull()) {
@@ -48,7 +52,7 @@ public class ArrayStack {
 				listElements();
 				break;
 			case 6:
-				System.out.println(number[top] + " is the element at the top");
+				System.out.println(stackArray[top] + " is the element at the top");
 				break;
 			case 7:
 				System.out.println("Enter the element to be searched:");
@@ -63,11 +67,16 @@ public class ArrayStack {
 		}
 	}
 
+	private static void initializeStack(int length) {
+		stackArray = new int[length];
+		top = -1;
+		maxSize = length - 1 ;
+	}
 	private static boolean isElementInArray(int num) {
 		boolean flag = false;
 
-		for (int i = 0; i < number.length; i++) {
-			if (number[i] == num) {
+		for (int i = 0; i < stackArray.length; i++) {
+			if (stackArray[i] == num) {
 				flag = true;
 				break;
 			}
@@ -77,16 +86,16 @@ public class ArrayStack {
 	}
 
 	private static void push(int newElement) {
-		number[++top] = newElement;
+		stackArray[++top] = newElement;
 	}
 
 	private static void pop() {
-		System.out.println(number[top--] + " is deleted.");
+		System.out.println(stackArray[top--] + " is deleted.");
 	}
 
 	private static void listElements() {
 		for (int a = 0; a <= top; a++) {
-			System.out.print(number[a] + "\t");
+			System.out.print(stackArray[a] + "\t");
 		}
 		System.out.println();
 	}

@@ -54,9 +54,10 @@ public class SinglyLinkedListImpl {
 //		addNodes(4);
 //		addNodes(5);
 		addNodes(1);
-		addNodes(9);
-		addNodes(9);
-		addNodes(9);
+		addNodes(1);
+		addNodes(2);
+		addNodes(3);
+		addNodes(3);
 
 		return head;
 	}
